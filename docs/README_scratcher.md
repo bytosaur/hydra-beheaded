@@ -7,5 +7,5 @@ Overrides `initVideo()` function of [hydra-synth](https://github.com/hydra-synth
 - `play()`: Starts playback.
 - `pause()`: Pauses playback.
 - `retrigger()`: Jumps to loop start (`start + 0.001`) and plays.
-- `setRate(r = 1)`: Sets playback speed via `video.playbackRate`.
-- `setLoopRange(start, end)`: Replaces loop bounds with fixed values by updating internal loop getter functions.
+- `setRate(r = 1)`: Sets playback speed from 0 to 16.
+- `setLoopRange(start, end)`: Replaces loop bounds with start and end in seconds.
