@@ -39,8 +39,8 @@ hsource.initVideo = function (url = '', getStart, getEnd, params) {
     const epsilon = 0.001;
 
     // Store dynamic getters on the instance so they can be replaced later
-    this.getLoopStart = getStart;
-    this.getLoopEnd = getEnd;
+    this.getLoopStart = ()=>(getStart);
+    this.getLoopEnd = ()=>(getEnd);
 
     this.play = () => {
       const p = vid.play();
