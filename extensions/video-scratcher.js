@@ -58,10 +58,26 @@ hsource.initVideo = function (url = '', getStart, getEnd, params) {
 
     this.setRate = (r = 1) => { vid.playbackRate = r; };
 
+    this.setLoopStart = (start) => {
+      this.setLoopFns({
+        start: () => start,
+        end: () => getEndVal()
+      });
+    }
+
     this.setLoopRange = (start, end) => {
+      if (end === undefined) end = vid.duration;
       this.setLoopFns({
         start: () => start,
         end: () => end
+      });
+    };
+
+    this.setLoopDelta = (start, delta) => {
+      if (delta === undefined) delta = vid.duration - start;
+      this.setLoopFns({
+        start: () => start,
+        end: () => (start+delta)
       });
     };
 
