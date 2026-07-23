@@ -51,7 +51,7 @@ hydra_source_proto.initVideo = function (url = '', getStart, getEnd, params) {
     
     this.pause = () => vid.pause();
 
-    this.retrigger = () => {
+    this.replay = () => {
       vid.currentTime = Math.max(0, getStartVal()) + epsilon;
       return this.play(); 
     };
