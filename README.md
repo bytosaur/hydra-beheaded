@@ -1,9 +1,10 @@
 # Hydra beheaded
-_"WILL YOU FORGET THE HEAD-SLICING THING?!_ - Hercules (1997, animated movie)
+_"WILL YOU FORGET THE HEAD-SLICING THING?!"_ - Hercules (1997, animated movie)
 
-## Head 1: video play head
 
-Overrides `initVideo()` function of [hydra-synth](https://github.com/hydra-synth/hydra-synth) to control the video source's playhead.
+## Head 1: video playhead
+
+Overrides `initVideo()` function to control the video source's playhead.
 
 ### Added functions
 
@@ -15,5 +16,3 @@ Overrides `initVideo()` function of [hydra-synth](https://github.com/hydra-synth
 - `setLoopRange(start, end)`: Replaces loop bounds with start and end in seconds.
 - `setLoopDelta(start, delta)`: Replaces loop bounds with start and (start + delta) in seconds.
 
-
-9316 6286
