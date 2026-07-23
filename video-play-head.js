@@ -26,10 +26,10 @@
     window._hydraScope = _hydra.sandbox.makeGlobal ? window : _hydra.synth;
 }
 
-const hsource = _hydra.s[0].constructor.prototype;
+const hydra_source_proto = _hydra.s[0].constructor.prototype;
 
 // override the initVideo function to add dynamic loop range support
-hsource.initVideo = function (url = '', getStart, getEnd, params) {
+hydra_source_proto.initVideo = function (url = '', getStart, getEnd, params) {
 
     const vid = document.createElement('video');
     vid.crossOrigin = 'anonymous';
