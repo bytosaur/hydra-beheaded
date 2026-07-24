@@ -15,4 +15,6 @@ Overrides `initVideo()` function to control the video source's playhead.
 - `setLoopStart(start)`: Sets playhead's position in seconds.
 - `setLoopRange(start, end)`: Replaces loop bounds with start and end in seconds.
 - `setLoopDelta(start, delta)`: Replaces loop bounds with start and (start + delta) in seconds.
+- `mute()`: mutes the video
+- `unmute()`: unmutes the video
 
