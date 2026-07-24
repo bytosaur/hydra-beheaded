@@ -81,6 +81,14 @@ hydra_source_proto.initVideo = function (url = '', getStart, getEnd, params) {
       });
     };
 
+    this.mute = () => {
+      vid.muted = true;
+    } 
+
+    this.unmute = () => {
+      vid.muted = false;
+    }
+
     const ensureInRange = () => {
       const s = getStartVal();
       const e = getEndVal();
